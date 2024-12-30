@@ -1,0 +1,19 @@
+/* Tailwind Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles */
+body {
+  font-family: sans-serif;
+  /* background-color: #f8f9fa; */
+  margin: 0;
+  /* Add a custom background image */
+
+  /* background-image: url('/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+
+}
