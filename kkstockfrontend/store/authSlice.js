@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { toast } from 'react-toastify';
 
 // Load environment variables
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://kkstock.onrender.com/api";
 console.log(BASE_URL)
 // Initial state
 const initialState = {

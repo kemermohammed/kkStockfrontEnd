@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Base API URL
-const BASE_URL = 'http://localhost:5000/api/product';
+const BASE_URL = 'https://kkstock.onrender.com/api/product';
 
 // Helper function to get the token from the state
 const getToken = (getState) => getState().auth.token;
