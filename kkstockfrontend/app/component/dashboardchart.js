@@ -1,8 +1,31 @@
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  LineController,
+  BarController,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
 import { Chart } from 'react-chartjs-2';
 
 // Register Chart.js components
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Title, Tooltip, Legend);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  LineController,
+  BarController,
+  Title,
+  Tooltip,
+  Legend
+);
 
 const DashboardCharts = () => {
   const salesData = {
@@ -13,12 +36,14 @@ const DashboardCharts = () => {
         data: Array.from({ length: 50 }, () => Math.floor(Math.random() * 1000)),
         borderColor: 'rgba(54, 162, 235, 1)',
         backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        fill: true,
       },
       {
         label: 'Profit',
         data: Array.from({ length: 50 }, () => Math.floor(Math.random() * 1000)),
         borderColor: 'rgba(255, 99, 132, 1)',
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        fill: true,
       },
     ],
   };
